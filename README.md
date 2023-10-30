@@ -7,17 +7,19 @@ down into several subtasks:
 
 1. Add the [SimpleLightbox](https://simplelightbox.com/) library as a project
    dependency using `npm` (no need for a CDN link from your previous work).
-2. Utilize your JavaScript code from the last homework on the **JavaScript
-   Fundamentals** course, but refactor it considering that the library was
-   installed via `npm` (use import/export syntax).
+2. Utilize your JavaScript code from the last
+   [homework](https://github.com/AM1007/goit-js-finalproject) on the
+   **JavaScript Fundamentals** course, but refactor it considering that the
+   library was installed via `npm` (use import/export syntax).
 
    To include the library's CSS code in the project, you need to add another
    import, in addition to what is described in the documentation.
 
-   ```html
-   *// Described in documentation* import SimpleLightbox from "simplelightbox";
-   *// Additional styles import* import
-   "simplelightbox/dist/simple-lightbox.min.css";
+   ```js
+   *// Described in documentation*
+   import SimpleLightbox from "simplelightbox";
+   *// Additional styles import*
+   import "simplelightbox/dist/simple-lightbox.min.css";
    ```
 
 ---
@@ -67,7 +69,7 @@ into several subtasks:
 
 ---
 
-### Task 2. Feedback form
+### Task 3. Feedback form
 
 HTML contains a form layout. Write a script that will save the values of the
 fields in local storage when the user inputs something.
