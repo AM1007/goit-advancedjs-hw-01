@@ -31,7 +31,6 @@ new SimpleLightbox('.gallery a', {
   showCounter: false,
   fadeSpeed: 200,
   close: true,
-  showCounter: true,
 });
 
 console.log(galleryItems);

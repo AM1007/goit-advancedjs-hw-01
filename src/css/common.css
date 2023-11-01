@@ -7,7 +7,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: whitesmoke;
   color: #212121;
   line-height: 1.5;
 }
@@ -15,4 +15,23 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(172, 24, 169);
+}
+
+.video-button-back {
+  position: absolute;
+  top: 0;
+  left: 10;
+  z-index: 15;
 }
