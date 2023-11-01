@@ -32,6 +32,10 @@ a:hover {
 .video-button-back {
   position: absolute;
   top: 0;
-  left: 10;
+  left: 10px;
   z-index: 15;
+}
+
+.video-body {
+  margin: 0;
 }

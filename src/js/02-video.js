@@ -51,11 +51,12 @@ iframe.insertAdjacentHTML(
   'afterend',
   `<iframe
       id="vimeo-reflection"
-      src="https://player.vimeo.com/video/878916453?autopause=false"
+      src="https://player.vimeo.com/video/878916453?controls=0"
       width="640"
       height="360"
       frameborder="0"
-      allowfullscreen
+      autoplay="0"
+      allow="fullscreen"
       allow="autoplay; encrypted-media"
     ></iframe>`
 );
