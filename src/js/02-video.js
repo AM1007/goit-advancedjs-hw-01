@@ -5,8 +5,10 @@ const LS_KEY = 'videoplayer-current-time';
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
-// Saving the player's activity in Local Storage
-
+/**
+ * Saving the player's activity in Local Storage
+ * @param {*} data
+ */
 const onPlay = function (data) {
   try {
     const strigifiedData = JSON.stringify(data);
@@ -17,7 +19,10 @@ const onPlay = function (data) {
 };
 player.on('timeupdate', throttle(onPlay, 1000));
 
-// Function to transfer pause to a newly loaded page
+/**
+ * Transfering video breakpoint to a newly loaded page
+ * @returns
+ */
 const onPlayback = function () {
   try {
     const breakpoint = localStorage.getItem(LS_KEY);
@@ -36,17 +41,15 @@ player.getVideoTitle().then(function (title) {
   console.log('title:', title);
 });
 
-// VideoPlayer styles
-
+// Vimeo player styles
 iframe.style.cssText = `position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  z-index: 10`;
+  z-index: 10;`;
 
-// Mirrored background
-
+// Video Background
 iframe.insertAdjacentHTML(
   'afterend',
   `<iframe
@@ -73,9 +76,7 @@ opacity: 0.5;
  `;
 
 reflection.setMuted(true);
-
 player.setAutopause(false);
-
 iframe.focus();
 
 player.on('play', () => {
