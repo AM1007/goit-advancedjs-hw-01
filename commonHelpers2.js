@@ -3,7 +3,7 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                
   left: 50%;
   transform: translate(-50%, 0%);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  z-index: 10`;s.insertAdjacentHTML("afterend",`<iframe
+  z-index: 10;`;s.insertAdjacentHTML("afterend",`<iframe
       id="vimeo-reflection"
       src="https://player.vimeo.com/video/878916453?controls=0"
       width="640"
