@@ -76,6 +76,7 @@ function initPage() {
   });
 }
 initPage();
+
 /**
  * Retrieve and delete data from form fields, output to console, reset form,
  * @param {*} evt
