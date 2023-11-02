@@ -62,7 +62,6 @@ const onFormInput = function (evt) {
 const throttledOnFormInput = throttle(onFormInput, 500);
 form.addEventListener('input', throttledOnFormInput);
 
-initPage();
 /**
  *Loading form data from Local Storage and fill them into the form
  * @returns
@@ -76,7 +75,7 @@ function initPage() {
     form.elements[name].value = value;
   });
 }
-
+initPage();
 /**
  * Retrieve and delete data from form fields, output to console, reset form,
  * @param {*} evt
