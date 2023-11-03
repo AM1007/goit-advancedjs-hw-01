@@ -96,7 +96,7 @@ const handleSubmit = function (evt) {
     evt.currentTarget.reset();
     remove(LS_KEY);
   } else {
-    alert('Пожалуйста, заполните оба поля перед отправкой формы.');
+    alert('Please complete both fields before submitting the form.');
   }
 };
 
