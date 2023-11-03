@@ -88,9 +88,16 @@ const handleSubmit = function (evt) {
     elements: { email, message },
   } = evt.currentTarget;
 
-  console.log({ email: email.value, message: message.value });
-  evt.currentTarget.reset();
-  remove(LS_KEY);
+  const emailValue = email.value.trim();
+  const messageValue = message.value.trim();
+
+  if (emailValue !== '' && messageValue !== '') {
+    console.log({ email: emailValue, message: messageValue });
+    evt.currentTarget.reset();
+    remove(LS_KEY);
+  } else {
+    alert('Пожалуйста, заполните оба поля перед отправкой формы.');
+  }
 };
 
 form.addEventListener('submit', handleSubmit);
